@@ -1,0 +1,145 @@
+header
+{
+	background: #222525E5;
+	position: relative;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.header__burger
+{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: end;
+}
+.phone-tab
+{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.header__burger.active .header__burger-line
+{
+ width: 40px;
+ transform: translate(0, 7px) rotate(45deg);
+}
+.header__burger.active .header__burger-line--small
+{
+ width: 40px;
+ transform: translate(-1px, -4px) rotate(-45deg);
+}
+
+.header__burger-line
+{
+	width: 40px;
+	height: 2px;
+	background: white;
+	transition: all 0.3s;
+}
+.header__burger-line--small
+{
+	width: 30px;
+}
+.header__wrap
+{
+	background: rgba(27, 30, 30, 1);
+	position: absolute;
+	left: 0;
+	top: 55px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.header__wrap.active
+{
+	visibility: visible;
+	opacity: 1;
+}
+.header__list
+{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.header__list-item a
+{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 15.4px;
+	color: rgba(234, 234, 234, 1);
+}
+.header__fhone
+{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 25px;
+}
+.header__fhone a
+{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 22px;
+	color: rgba(255, 255, 255, 1);
+}
+.header__fhone a:last child
+{
+	color: rgba(234, 234, 234, 1);
+	font-size: 15px;
+	line-height: 16.5px;
+}
+.header__btn
+{
+	width: 100%;
+	background: linear-gradient(270deg, #25B7BC 0%, #007FA1 100%);
+	border-radius: 106px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 50px;
+	color: rgba(255, 255, 255, 1);
+	height: 50px;
+}
+.fhone-tab
+{
+	display: none;
+}
+
+@media(min-width: 1024px)
+{
+	header
+	{
+		padding: 20px 0;
+	}
+	header svg
+	{
+		width: 	211px;
+		height: 50px;
+	}
+	.header__link-wrap
+	{
+		display: flex;
+		align-items: center;
+		gap: 77px;
+	}
+	.fhone-tab
+	{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.header__wrap
+	{
+		top: 94px;
+	}
+	.fhone-tab svg
+	{
+		width: 14px;
+		height: 14px;
+	}
+}
