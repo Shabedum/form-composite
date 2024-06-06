@@ -1,4 +1,4 @@
-mainObj.header = 
+mainObj.header =
 {
 	headerWrap:document.querySelector('._headerWrap'),
 	show(instance)
@@ -6,7 +6,7 @@ mainObj.header =
 		if(instance.classList.contains('active'))
 		{
 			instance.classList.remove('active')
-			this.headerWrap.classList.remove('active')	
+			this.headerWrap.classList.remove('active')
 		}
 		else
 		{

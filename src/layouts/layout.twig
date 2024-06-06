@@ -11,6 +11,7 @@
 	<main>
 		{% block page %}{% endblock %}
 	</main>
-	<script src="main.min.js"></script>
+	{% include "components/footer/footer.twig" %}
+	<script type="text/javascript" src="main.min.js"></script>
 </body>
 </html>
