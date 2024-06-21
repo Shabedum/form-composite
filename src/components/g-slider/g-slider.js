@@ -1,8 +1,8 @@
-mainObj.production =
+mainObj.gSlider =
 {
 	initSlider()
 	{
-		const swiper = new Swiper('._production',
+		const swiper = new Swiper('.swiper',
 		{
 		// Optional parameters
 
@@ -25,3 +25,4 @@ mainObj.production =
 		});
 	}
 }
+ 

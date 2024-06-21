@@ -7,6 +7,6 @@ let mainObj =
 {
 	inition()
 	{
-		
+		this.production.initSlider()
 	}
 }
